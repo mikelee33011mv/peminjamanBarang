@@ -66,6 +66,7 @@ if (isset($_SESSION['penolakan'])) {
     unset($_SESSION['penolakan']);
 }
 ?>
+<!--  fggergtr-->
         <!--menghitung denda  -->
         <?php
         $query_denda = "SELECT SUM(denda) AS total_denda FROM peminjaman WHERE id_login = $id_login AND denda > 0";
